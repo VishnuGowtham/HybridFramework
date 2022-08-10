@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.crm.seleniumframework.campaign.CreateCampaignTest"/>
+      <class name="com.crm.seleniumframework.contact.CreateContactTest"/>
+      <class name="com.crm.seleniumframework.opportunities.CreateOpportunitywithAssignedtoGroupAsMarketingGroupTest"/>
+      <class name="com.crm.seleniumframework.product.CreateProductTest"/>
+      <class name="com.crm.seleniumframework.opportunities.CreateOpportunitywithAssignedtoGroupAsSupportGroupTest"/>
+      <class name="com.crm.seleniumframework.organization.CreateOrgTest"/>
+      <class name="com.crm.seleniumframework.contact.CreateContactWithOrgTest"/>
+      <class name="com.crm.seleniumframework.organization.CreateOrgWithIndustryTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

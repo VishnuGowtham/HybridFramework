@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "tests">
+  <test thread-count="2" name="Test-runner 1">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.crm.seleniumframework.organization.CreateOrgWithIndustry"/>
+      <class name="com.crm.seleniumframework.organization.CreateOrg"/>
+      <class name="com.crm.seleniumframework.contact.CreateContactWithOrg"/>
+      <class name="com.crm.seleniumframework.contact.CreateContact"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="1" name="Test runner 2">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.crm.seleniumframework.campaign.CreateCampaign"/>
+      <class name="com.crm.seleniumframework.product.CreateProduct"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="1" name="Test runner 3">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.crm.seleniumframework.opportunities.CreateOpportunitywithAssignedtoGroupAsMarketingGroup"/>
+      <class name="com.crm.seleniumframework.opportunities.CreateOpportunitywithAssignedtoGroupAsSupportGroup"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
